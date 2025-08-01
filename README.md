@@ -83,7 +83,7 @@ def set_cookie_token(response: Response, token: str):
 
 ### 👨‍💻 Author
 
-### 😎TJBOSS😎
+### 😎Tejas Jagdale😎
 
 ### Developer, Dreamer, and Doer — Building the future one line at a time.
 
