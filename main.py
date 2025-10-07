@@ -1,12 +1,6 @@
-from fastapi import FastAPI
-from routes import router
-from db import Base,my_engine
+def main():
+    print("Hello from authentication-module!")
 
 
-
-
-
-
-app =  FastAPI()
-Base.metadata.create_all(my_engine)
-app.include_router(router=router)
+if __name__ == "__main__":
+    main()
