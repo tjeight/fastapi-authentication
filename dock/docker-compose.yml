@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-auth
+    restart: always
+    environment:
+      POSTGRES_USER: tejas
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: auth-db
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:latest
+    container_name: redis-auth
+    restart: always
+    ports:
+      - "6385:6379"
+    volumes:
+      - redisdata:/data
+
+volumes:
+  pgdata:
+  redisdata:

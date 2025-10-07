@@ -1,7 +1,11 @@
 [project]
 name = "authentication-module"
 version = "0.1.0"
-description = "Add your description here"
+description = "This project will be the reusable authentication module"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "alembic>=1.16.5",
+    "dotenv>=0.9.9",
+    "fastapi[standard]>=0.118.0",
+]
